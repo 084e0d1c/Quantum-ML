@@ -131,3 +131,9 @@ dmypy.json
 
 # VSCode
 .vscode/*
+
+# Obsidian Plugins
+Notes/.obsidian/plugins/*
+Notes/.obsidian/themes/*
+Notes/.obsidian/config/*
+Notes/.obsidian/*
