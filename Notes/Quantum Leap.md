@@ -1,5 +1,5 @@
 ---
-date updated: '2021-05-04T21:26:55+08:00'
+date updated: '2021-05-04T21:31:59+08:00'
 
 ---
 
@@ -18,7 +18,7 @@ date updated: '2021-05-04T21:26:55+08:00'
 
 ##### Bloch Sphere
 
-![[bloch_sphere.png]]
+![Bloch Sphere](bloch_sphere.png)
 
 - Moving $\theta$ will change the state value
 - Moving $\phi$ will change the phase of the quantum state
@@ -30,7 +30,7 @@ date updated: '2021-05-04T21:26:55+08:00'
 - We create a Quantum function (circuit + device)
 - Classical Gradient decent is possible with PennyLane
 
-![[pennylane.png]]
+![pennylane](pennylane.png)
 
 ##### Quantum Embedding
 
@@ -44,7 +44,7 @@ date updated: '2021-05-04T21:26:55+08:00'
 ##### Variational Circuits
 
 An alternative name is "parameterized quantum circuits"
-![[variational_circuit.png]]
+![Variational Circuit](variational_circuit.png)
 
 - Ingredients in a Variational Circuit
   1. Fixed initial state (vacuum state or zero state)
