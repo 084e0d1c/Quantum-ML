@@ -1,5 +1,5 @@
 ---
-date updated: '2021-05-04T21:31:59+08:00'
+date updated: '2021-05-04T21:45:40+08:00'
 
 ---
 
@@ -54,3 +54,22 @@ An alternative name is "parameterized quantum circuits"
 - A near term solution for quantum models
 - Typically they have short gate sequences, to minimize floating error in each output
 - Classical input is fed into the quantum circuit alongside weights ($\theta$) and is converted back to classical information by measuring and evaluating the expectation value of the observable value
+
+##### Quantum Embedding
+
+QE represents classical data as quantum states in a [Hilbert space](https://www.youtube.com/watch?v=7zx3MT9FgT0) via a [quantum feature map](https://pennylane.ai/qml/glossary/quantum_feature_map.html).
+
+##### Hilbert Space Properties
+
+1. It is a linear vector space
+2. It has an inner product operation that satisfies certain conditions
+3. Conditions for inner product
+
+![](hilbert_space_inner_prod_conditions.png)
+4. Hilbert spaces are separable, so they contain a dense subset
+
+##### Quantum Gradients
+1. The output of a variational circuit is the expectation value of a measurement observable
+2. Concretely, it can be perceived as a quantum function $f(\theta)$ with tunable params $\theta = \theta_1 ,  \theta_2..$
+3. As with any other function, we can find the partial derivatives $f$ with respect to each $\theta$ and conduct backpropagation
+4. Essentially, it becomes a "quantum Jacobian" that is used by the classical optimizer.
