@@ -1,9 +1,11 @@
 ---
-date updated: '2021-05-04T21:45:40+08:00'
+date updated: '2021-05-06T10:13:56+08:00'
 
 ---
 
 # Quantum Machine Learning
+
+[[QML Internship]]
 
 #### Youtube Tutorial
 
@@ -49,7 +51,8 @@ An alternative name is "parameterized quantum circuits"
 - Ingredients in a Variational Circuit
   1. Fixed initial state (vacuum state or zero state)
   2. A quantum circuit $U(\theta)$ where the free params are $\theta$ -> the entanglement param is $\theta$
-  3. Measurement at the output
+  3. Qubit rotations will be optimized
+  4. Measurement at the output
 - They are trained by classical optimization algorithms and $\theta$ is updated with every step (assuming using Stochastic Gradient Descent)
 - A near term solution for quantum models
 - Typically they have short gate sequences, to minimize floating error in each output
@@ -69,7 +72,12 @@ QE represents classical data as quantum states in a [Hilbert space](https://www.
 4. Hilbert spaces are separable, so they contain a dense subset
 
 ##### Quantum Gradients
+
 1. The output of a variational circuit is the expectation value of a measurement observable
 2. Concretely, it can be perceived as a quantum function $f(\theta)$ with tunable params $\theta = \theta_1 ,  \theta_2..$
 3. As with any other function, we can find the partial derivatives $f$ with respect to each $\theta$ and conduct backpropagation
 4. Essentially, it becomes a "quantum Jacobian" that is used by the classical optimizer.
+
+##### Quantum Neural Networks
+
+Broadly speaking, this can be thought of as a quantum circuit with trainable params
